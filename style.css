@@ -1,23 +1,34 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: url(https://cdn1.sputniknewsbr.com.br/img/07e7/0b/01/31198715_0:8:2679:1515_1920x0_80_0_0_46491bdc229a55a5a8a26c72aa0269e1.jpg);
-}
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
 
-h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-}
 
-h3 {
+/* Estilizando a div com a classe "container" */
+.container {
+    text-align: center; /* Centraliza o conteúdo na div */
+    margin: 20px; /* Adiciona margem ao redor da div */
+    background-color: #f0f0f0; /* Define a cor de fundo da div */
+    padding: 20px; /* Adiciona preenchimento interno à div */
+    border: 1px solid #ccc; /* Adiciona uma borda à div */
+  }
+  
+  /* Estilizando a imagem com a classe "dolar" */
+  .dolar {
+    width: 100px; /* Largura da imagem */
+    height: auto; /* Altura ajustada automaticamente */
+    display: block; /* Para centralizar a imagem horizontalmente */
+    margin: 0 auto; /* Para centralizar a imagem horizontalmente */
+    border: 1px solid #333; /* Adiciona uma borda à imagem */
+  }
+  
+  /* Estilizando os elementos h2 e h3 dentro da div "container" */
+  .container h2 {
+    color: #333; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Família de fontes */
+    margin: 10px 0px; /* Adiciona margem acima e abaixo dos elementos */
+  }
+  .container h3 {
     font-size: 18px;
+    font-family: Arial, sans-serif;
     color: #007bff;
-}
-
+  }
+  /* Adicione mais estilos conforme necessário */
+  
 
