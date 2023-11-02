@@ -1,7 +1,6 @@
 fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
 .then(response => response.json())
 .then(data => {
-    console.log(data)
     document.getElementById('nomeDolar').textContent = `${data.USDBRL.name}`;
     document.getElementById('dolar').textContent = `R$: ${parseFloat(data.USDBRL.bid).toFixed(2)}`;
     document.getElementById('nomeEuro').textContent = `${data.EURBRL.name}`;
