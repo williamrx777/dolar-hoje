@@ -18,3 +18,28 @@ fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
     console.log('Error' + error);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'toggle-btn';
+    toggleBtn.innerText = 'Dark/Light';
+    document.body.appendChild(toggleBtn);
+
+    // Verificar se há uma preferência armazenada
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        document.body.classList.add(currentTheme);
+    }
+
+    // Alternar entre dark e light mode
+    toggleBtn.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('light-mode');
+
+        // Armazenar a preferência no localStorage
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark-mode');
+        } else {
+            localStorage.setItem('theme', 'light-mode');
+        }
+    });
+});

@@ -1,13 +1,7 @@
 
 
 /* Estilizando a div com a classe "container" */
-.container {
-    text-align: center; /* Centraliza o conteúdo na div */
-    margin: 20px; /* Adiciona margem ao redor da div */
-    background-color: #f0f0f0; /* Define a cor de fundo da div */
-    padding: 20px; /* Adiciona preenchimento interno à div */
-    border: 1px solid #ccc; /* Adiciona uma borda à div */
-  }
+
   
   /* Estilizando a imagem com a classe "dolar" */
   .dolar {
@@ -32,3 +26,63 @@
   /* Adicione mais estilos conforme necessário */
   
 
+/* Estilos gerais */
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo claro */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0; /* Cor de fundo dos containers no modo claro */
+}
+
+.dolar {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+/* Modo escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode.container {
+  background-color: #333333;
+  color: #ffffff; /* Cor do texto nos containers no modo escuro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Botão de alternância */
+.toggle-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
